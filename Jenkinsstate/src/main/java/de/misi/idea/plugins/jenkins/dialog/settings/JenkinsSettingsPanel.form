@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="de.misi.idea.plugins.jenkins.dialog.settings.JenkinsSettingsPanel">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="15" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="447"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="2b626" class="javax.swing.JCheckBox" binding="enableJenkinsState">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.enable.label"/>
+        </properties>
+      </component>
+      <vspacer id="50ea8">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="882ed" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.url.label"/>
+        </properties>
+      </component>
+      <component id="9af30" class="javax.swing.JTextField" binding="textURL">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+        </properties>
+      </component>
+      <component id="e31a9" class="javax.swing.JButton" binding="btnShowURLHelper">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <icon value="icons/magic_wand_2.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="3c66" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.checkeveryprefix.label"/>
+        </properties>
+      </component>
+      <component id="b46d" class="javax.swing.JTextField" binding="checkInterval">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+        </properties>
+      </component>
+      <component id="5e50a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.checkeverysuffix.label"/>
+        </properties>
+      </component>
+      <component id="5574a" class="javax.swing.JCheckBox" binding="blueIsGreen">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.blueIsGreen.label"/>
+        </properties>
+      </component>
+      <component id="5946f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.shownotification.label"/>
+        </properties>
+      </component>
+      <component id="2aac3" class="javax.swing.JCheckBox" binding="showBlueBalloon">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <icon value="icons/blue.png"/>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.showbaloon.blue.label"/>
+        </properties>
+      </component>
+      <component id="3f8e5" class="javax.swing.JCheckBox" binding="showYellowBalloon">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <icon value="icons/yellow.png"/>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.showbaloon.yellow.label"/>
+        </properties>
+      </component>
+      <component id="91c84" class="javax.swing.JCheckBox" binding="showRedBalloon">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <icon value="icons/red.png"/>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.showbaloon.red.label"/>
+        </properties>
+      </component>
+      <component id="5f071" class="javax.swing.JCheckBox" binding="playAudio">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.playaudio.label"/>
+        </properties>
+      </component>
+      <component id="c0b45" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.audiofile.label"/>
+        </properties>
+      </component>
+      <component id="2617b" class="javax.swing.JTextField" binding="textAudioFile">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+        </properties>
+      </component>
+      <component id="31637" class="javax.swing.JButton" binding="btnBrowseAudio">
+        <constraints>
+          <grid row="12" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.browse.audio.text"/>
+        </properties>
+      </component>
+      <component id="127b8" class="javax.swing.JButton" binding="btnPlayAudio">
+        <constraints>
+          <grid row="12" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <icon value="icons/sound.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="f55ae" class="javax.swing.JCheckBox" binding="requiresAuthentication">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.loginrequired.label"/>
+        </properties>
+      </component>
+      <component id="edb76" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.username.label"/>
+        </properties>
+      </component>
+      <component id="5b181" class="javax.swing.JTextField" binding="username">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+        </properties>
+      </component>
+      <component id="3a57b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.apitoken.label"/>
+        </properties>
+      </component>
+      <component id="1f745" class="javax.swing.JPasswordField" binding="apitoken">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+        </properties>
+      </component>
+      <hspacer id="40db2">
+        <constraints>
+          <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="8699e" class="javax.swing.JCheckBox" binding="storeAPIToken">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <selected value="true"/>
+          <text resource-bundle="de/misi/idea/plugins/jenkins/resources/messages" key="settings.storeapitoken.label"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
